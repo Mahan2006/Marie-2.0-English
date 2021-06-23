@@ -17,10 +17,18 @@ from tg_bot.modules import ALL_MODULES
 from tg_bot.modules.helper_funcs.chat_status import is_user_admin
 from tg_bot.modules.helper_funcs.misc import paginate_modules
 
-PM_START_TEXT = """
-hello {}, my name is {}! if you have any questions about how to use me please give me /help... 
 
-im a group manager bot .
+mv_buttons = [[
+            InlineKeyboardButton('My Creator', url='https://t.me/Mahan_Official_Admin'),
+            InlineKeyboardButton('Support Group', url ='https://t.me/MahanMvgroup')
+        ],[
+            InlineKeyboardButton('Close 🔐', callback_data="close")
+        ]]
+
+PM_START_TEXT = """
+hoi {}, my name is {}! if you have any questions about how to use me please give me /help... 
+
+im a group manager bot maintained by  [this person](tg://user?id={}).
 
 My future updates will be put into This Channel - @MahanCreations & My Support Group @MahanMVGroup.
 
@@ -142,7 +150,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),
+                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),reply_markup = InlineKeyboardMarkup(mv_buttons))
                 parse_mode=ParseMode.MARKDOWN)
     else:
         update.effective_message.reply_text("waked up😏😏😏")
