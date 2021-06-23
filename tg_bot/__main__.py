@@ -22,11 +22,11 @@ mv_buttons = [[
             InlineKeyboardButton('💞 Our Channel 💞', url='https://t.me/MahanMVMovies'),
             InlineKeyboardButton('💞 Our Group 💞', url ='https://t.me/MahanMvgroup')
         ],[
-            InlineKeyboardButton('This Bot Creator 💞', url="t.me/Mahan_Official_Admin")
+            InlineKeyboardButton('💞 This Bot Creator 💞', url="t.me/Mahan_Official_Admin")
         ]]
 
 PM_START_TEXT = """
-**hi {}, my name is {}! if you have any questions about how to use me please give me /help... 
+**hi {}, my name is {} 😝 
 
 im a group manager bot maintained by [BeatKing Mahan](tg://user?id={}).
 
