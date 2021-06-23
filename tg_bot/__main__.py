@@ -24,7 +24,7 @@ im a group manager bot maintained by  [this person](tg://user?id={}).
 
 My future updates will be put into This Channel - @MahanCreations & My Support Group @MahanMVGroup.
 
-This is my [Deploy Code](😤),
+This is my [Deploy Code](https://t.me/MahanMVMovies),
 you can create clone same like me..
 
 For more commands click /help...
