@@ -150,8 +150,8 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),reply_markup = InlineKeyboardMarkup(mv_buttons))
-                parse_mode="html")
+                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),reply_markup = InlineKeyboardMarkup(mv_buttons),
+                parse_mode=parse_mode=ParseMode.MARKDOWN))
     else:
         update.effective_message.reply_text("waked up😏😏😏")
 
