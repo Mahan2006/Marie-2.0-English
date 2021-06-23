@@ -19,16 +19,16 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 mv_buttons = [[
-            InlineKeyboardButton('Our Channel', url='https://t.me/MahanMVMovies'),
-            InlineKeyboardButton('Support Group', url ='https://t.me/MahanMvgroup')
+            InlineKeyboardButton('💞 Our Channel 💞', url='https://t.me/MahanMVMovies'),
+            InlineKeyboardButton('💞 Our Group 💞', url ='https://t.me/MahanMvgroup')
         ],[
-            InlineKeyboardButton('My Creator', url="t.me/Mahan_Official_Admin")
+            InlineKeyboardButton('This Bot Creator 💞', url="t.me/Mahan_Official_Admin")
         ]]
 
 PM_START_TEXT = """
 **hi {}, my name is {}! if you have any questions about how to use me please give me /help... 
 
-im a group manager bot maintained by [BeatKing Maha](tg://user?id={}).
+im a group manager bot maintained by [BeatKing Mahan](tg://user?id={}).
 
 For more commands click /help**...
 
@@ -55,7 +55,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for [my creator](t.me/mahan_official_admin) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [PayPal](t.me/TheStyleKing), or [Mayan](t.me/Mahan_Official_Admin)."""
+There are two ways of paying him; [Style King](t.me/TheStyleKing), or [Mahan](t.me/Mahan_Official_Admin)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
