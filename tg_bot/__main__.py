@@ -19,10 +19,10 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 mv_buttons = [[
-            InlineKeyboardButton('💞 Our Channel 💞', url='https://t.me/MahanMVMovies'),
-            InlineKeyboardButton('💞 Our Group 💞', url ='https://t.me/MahanMvgroup')
+            InlineKeyboardButton('💞 Our Channel 💞', url='https://t.me/KannadaHDPictures'),
+            InlineKeyboardButton('💞 Our Group 💞', url ='https://t.me/KannadaHDgroup')
         ],[
-            InlineKeyboardButton('💞 This Bot Creator 💞', url="t.me/Mahan_Official_Admin")
+            InlineKeyboardButton('💞 This Bot Creator 💞', url="t.me/KannadaHDAdmin")
         ]]
 
 PM_START_TEXT = """
