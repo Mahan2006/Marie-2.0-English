@@ -55,7 +55,7 @@ DONATE_STRING = """Heya, glad to hear you want to donate!
 It took lots of work for [my creator](t.me/mahan_official_admin) to get me to where I am now, and every donation helps \
 motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
 (see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [Style King](t.me/TheStyleKing), or [Mahan](t.me/Mahan_Official_Admin)."""
+There are two ways of paying him; [Kannada HD Admin](t.me/KannadaHDAdmin), or [Mahan](t.me/Mahan_Official_Admin)."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -411,12 +411,12 @@ def migrate_chats(bot: Bot, update: Update):
 
 def main():
     test_handler = CommandHandler("test", test)
-    start_handler = CommandHandler("start", start, pass_args=True)
+    start_handler = CommandHandler("mahan", start, pass_args=True)
 
-    help_handler = CommandHandler("help", get_help)
+    help_handler = CommandHandler("admin", get_help)
     help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_")
 
-    settings_handler = CommandHandler("settings", get_settings)
+    settings_handler = CommandHandler("mahan_mv", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     donate_handler = CommandHandler("donate", donate)
