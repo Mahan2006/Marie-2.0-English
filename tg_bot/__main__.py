@@ -26,7 +26,8 @@ mv_buttons = [[
         ]]
 
 PM_START_TEXT = """
-**Hello dear tg://user?id={mention}, my name is {} 😝 
+**Hello dear {m.from_user.mention(style='md')}
+, my name is {} 😝 
 
 im a group manager bot maintained by [BeatKing Mahan](tg://user?id={}).
 
