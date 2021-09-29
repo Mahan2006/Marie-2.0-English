@@ -26,13 +26,13 @@ mv_buttons = [[
         ]]
 
 PM_START_TEXT = """
-**hi {}, my name is {} 😝 
+**Hello dear tg://user?id={mention}, my name is {} 😝 
 
 im a group manager bot maintained by [BeatKing Mahan](tg://user?id={}).
 
 For more commands click /help**...
 
-**Keep in mind this bot is made only for @MahanMVGroup.**
+**Keep in mind this bot is made only for @KannadaHDGroup.**
 """
 
 HELP_STRINGS = """
