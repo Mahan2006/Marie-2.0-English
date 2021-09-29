@@ -26,10 +26,9 @@ mv_buttons = [[
         ]]
 
 PM_START_TEXT = """
-**Hello dear {m.from_user.mention(style='md')}
-, my name is {} 😝 
+**Hello dear {} , my name is {} 😝 
 
-im a group manager bot maintained by [BeatKing Mahan](tg://user?id={}).
+Im a group manager bot maintained by [BeatKing Mahan](tg://user?id={}).
 
 For more commands click /help**...
 
@@ -145,7 +144,7 @@ def start(bot: Bot, update: Update, args: List[str]):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),reply_markup = InlineKeyboardMarkup(mv_buttons),
+                PM_START_TEXT.format(escape_markdown(from_user.mention), escape_markdown(bot.first_name), OWNER_ID),reply_markup = InlineKeyboardMarkup(mv_buttons),
                 parse_mode=ParseMode.MARKDOWN)
     else:
         update.effective_message.reply_text("waked up😏😏😏")
