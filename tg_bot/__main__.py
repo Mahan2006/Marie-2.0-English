@@ -25,16 +25,7 @@ mv_buttons = [[
             InlineKeyboardButton('💞 This Bot Creator 💞', url="t.me/KannadaHDAdmin")
         ]]
 
-PM_START_TEXT = """
-**Hello dear {} , my name is {} 😝 
-
-Im a group manager bot maintained by [BeatKing Mahan](tg://user?id={}).
-
-For more commands click /help**...
-
-**Keep in mind this bot is made only for @KannadaHDGroup.**
-"""
-
+PM_START_TEXT = "CAACAgUAAxkBAAEL-UlhVRXtyxdIilmPN6qajcpyIU59_QAC7wQAAm2oWVb6_8RwES4YEyEE"
 HELP_STRINGS = """
 
 Hello! my name *{}*.
@@ -51,12 +42,7 @@ Hello! my name *{}*.
 And the following:
 """.format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll of the following commands  / or ! can  be used...\n")
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
-It took lots of work for [my creator](t.me/mahan_official_admin) to get me to where I am now, and every donation helps \
-motivate him to make me even better. All the donation money will go to a better VPS to host me, and/or beer \
-(see his bio!). He's just a poor student, so every little helps!
-There are two ways of paying him; [Kannada HD Admin](t.me/KannadaHDAdmin), or [Mahan](t.me/Mahan_Official_Admin)."""
-
+DONATE_STRING = "No Need to donate. I'm rich"
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -143,11 +129,10 @@ def start(bot: Bot, update: Update, args: List[str]):
 
         else:
             first_name = update.effective_user.first_name
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(escape_markdown(first_name), escape_markdown(bot.first_name), OWNER_ID),reply_markup = InlineKeyboardMarkup(mv_buttons),
-                parse_mode=ParseMode.MARKDOWN)
+            update.effective_message.reply_sticker(
+                PM_START_TEXT)
     else:
-        update.effective_message.reply_text("waked up😏😏😏")
+        update.effective_message.reply_text("😤")
 
 
 # for test purposes
@@ -411,12 +396,12 @@ def migrate_chats(bot: Bot, update: Update):
 
 def main():
     test_handler = CommandHandler("test", test)
-    start_handler = CommandHandler("khdp", start, pass_args=True)
+    start_handler = CommandHandler("start", start, pass_args=True)
 
-    help_handler = CommandHandler("admin", get_help)
+    help_handler = CommandHandler("help", get_help)
     help_callback_handler = CallbackQueryHandler(help_button, pattern=r"help_")
 
-    settings_handler = CommandHandler("mahan_mv", get_settings)
+    settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
     donate_handler = CommandHandler("donate", donate)
@@ -446,7 +431,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Using long polling.")
+        LOGGER.info("Using long polling.\nJoin @KannadaHDPictures")
         updater.start_polling(timeout=15, read_latency=4)
 
     updater.idle()
