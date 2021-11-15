@@ -19,7 +19,7 @@ from tg_bot.modules.helper_funcs.misc import paginate_modules
 
 
 mv_buttons = [[
-            InlineKeyboardButton('💞 Our Channel 💞', url='https://t.me/KannadaHDPictures'),
+            InlineKeyboardButton('💞 Ou Channel 💞', url='https://t.me/KannadaHDPictures'),
             InlineKeyboardButton('💞 Our Group 💞', url ='https://t.me/KannadaHDgroup')
         ],[
             InlineKeyboardButton('💞 This Bot Creator 💞', url="t.me/KannadaHDAdmin")
